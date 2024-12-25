@@ -3,8 +3,8 @@
 // ================================
 
 // Using Number()
-// let str1 = "123";
-let str1 = "abc";
+let str1 = "123";
+// let str1 = "abc"; //NaN
 let num1 = Number(str1);
 console.log(num1);
 
@@ -95,7 +95,6 @@ console.log(typeof NaN);
 // -------- How NaN Occurs --------
 // When trying to parse a non-numeric value with parseInt() or parseFloat()
 console.log(parseInt("abc"));
-console.log(parseInt("123"));
 // Invalid arithmetic operations
 console.log(0 / 0); 
 console.log(Math.sqrt(-1));
