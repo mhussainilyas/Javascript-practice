@@ -14,6 +14,10 @@ console.log(myName);
 let message = `Hello, ${myName}!`;
 console.log(message);
 
+// 4. String constructor
+let myStr = new String("Muhammad Hussain");
+console.log(myName);
+
 // ------ String Concatination ------
 let str = greeting + myName;
 let str1 = greeting + " " + myName;
