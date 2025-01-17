@@ -162,4 +162,4 @@ const getDaysDifference = (date1, date2) => {
 }
 let date1 = new Date("2005-04-28"); // my DOB 😊
 let date2 = new Date();
-console.log(getDaysDifference(date1, date2));
+console.log(`You have lived ${getDaysDifference(date1, date2)} Days`);
