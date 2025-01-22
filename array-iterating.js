@@ -47,7 +47,7 @@ console.log(filtered); // [40, 50]
 // 6. Using reduce() method
 // The reduce() method applies a function to accumulate a result from all array elements.
 const numbers6 = [100, 20, 30, 40];
-const sum = numbers6.reduce((acc, number, inedx, arr) => {
+const sum = numbers6.reduce((acc, number, index, arr) => {
     return acc + number;
 }, 0);
 console.log(sum); // 100
@@ -83,6 +83,14 @@ let result2 = ages2.findLastIndex((age, index, arr) => {
     return age <= 18;
 });
 console.log(result2);
+
+// 11.Using every() method
+// The every() method of Array instances tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+const array1 = [1, 30, 39, 29, 10, 13];
+let bool = array1.every((key) => {
+    return key < 10;
+});
+console.log(bool);
 
 // ===================================
 //         Sorting an array
