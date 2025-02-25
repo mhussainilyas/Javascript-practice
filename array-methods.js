@@ -62,3 +62,23 @@ console.log(index);
 const item = ["a", "b", "c"];
 console.log(item.includes("b")); // true
 console.log(item.includes("h")); // false
+
+// 11. flat(n)
+// create one dimensional array from multi-dimensional array.
+// let nestedArray = [1, 2, 3, [4, 5, 6], 7];
+let nestedArray = [1, 2, 3, [4, [5, [5.5]], 6], 7];
+let flatArray = nestedArray.flat(3);
+console.log(flatArray);
+
+// 12. flatMap()
+// it combine flat() with map().
+let newArr = ["My name", "is Muhammad", "Hussain"];
+//! without flatMap()
+// let resultantArr = newArr.map((currVal, i, arr) => {
+//     return currVal.split(" ");
+// });
+//! with flatMap()
+let resultantArr = newArr.flatMap((currVal, i, arr) => {
+    return currVal.split(" ");
+});
+console.log(resultantArr);
