@@ -38,6 +38,10 @@ let bigNum1 = 9007199254740991n; // 1st Method
 let bigNum2 = BigInt(9007199254740991); // 2nd Method
 console.log(bigNum1, bigNum2);
 
+let number = Number.MAX_SAFE_INTEGER;
+let newNumber = number + 11;
+console.log(newNumber - 2);
+
 /*
 ======================================
         Object Data Types
