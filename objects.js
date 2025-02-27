@@ -180,7 +180,7 @@
 //     }
 //     return obj;
 // }
-//? 2nd method 
+//? 2nd method
 // const arrayToObj = (arr) => {
 //     let result = arr.reduce((obj, item) => ({...obj, [item.id]: item}), {});
 //     return result;
@@ -191,13 +191,37 @@
 //    Object.fromEntries()
 // ==========================
 
-let person = {
-    myName: "Hussain",
-    age: 19,
-};
-const entries = Object.entries(person);
-console.log(entries);
+// let person = {
+//     myName: "Hussain",
+//     age: 19,
+// };
+// const entries = Object.entries(person);
+// console.log(entries);
 
 // fromEntries()
-const newPerson = Object.fromEntries(entries);
-console.log(newPerson);
+// const newPerson = Object.fromEntries(entries);
+// console.log(newPerson);
+
+// ==============================
+//    Object.hasOwn(obj, prop)
+// ==============================
+// It is used to check whether the property in an object is present or not.
+
+// const book = {
+//   name: "A Dream Coding World",
+//   author: "Muhammad Hussain",
+// };
+// console.log(Object.hasOwn(book, "name"));
+// console.log(Object.hasOwn(book, "price"));
+// traditional way
+// console.log(book.hasOwnProperty("name"));
+// console.log(book.hasOwnProperty("price"));
+
+// issue with hasOwnProperty()
+// Doesn't works for the objects, created with Object.create()
+let student = Object.create(null);
+console.log(typeof student);
+student.name = "Hussain";
+console.log(student);
+// console.log(student.hasOwnProperty("name")); // Error
+console.log(Object.hasOwn(student, "name"));
