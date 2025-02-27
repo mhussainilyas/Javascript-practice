@@ -36,6 +36,10 @@ console.log(str.replace('a', "H"));
 // 8. replaceAll()
 // Replaces all parts of substring with another.
 console.log(str.replaceAll('a', "H"));
+// replacing multiple space with ha single space.
+let text = "This    is         extra     spaces.";
+const normalizedText = text.replaceAll(/\s+/g, " ");
+console.log(normalizedText);
 
 // 9. split()
 // Splits a string into an array based on a delimiter.
