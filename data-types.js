@@ -28,13 +28,10 @@ let Undefined_val;
 console.log(Undefined_val);
 
 // Symbol: Unique identifiers
-let sym1 = Symbol();
-let sym2 = Symbol("mySymbol");
-console.log(sym1, sym2);
-console.log(Symbol("id") === Symbol("id")); // false
-let globalSym = Symbol.for("shared");
-let same = Symbol.for("shared");
-console.log(globalSym === same); // true
+let mySymbol = Symbol("This is my symbol.");
+console.log(typeof mySymbol);
+console.log(mySymbol.description);
+
 
 // Bigint: Large integers with arbitrary precision
 let bigNum1 = 9007199254740991n; // 1st Method
